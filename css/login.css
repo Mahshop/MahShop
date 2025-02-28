@@ -1,0 +1,287 @@
+body{
+    background-color:  rgb(239, 212, 11); 
+ }
+
+ .tform{
+     font-family:Georgia, 'Times New Roman', Times, serif;
+    
+ }
+ label{
+     font-family:Georgia, 'Times New Roman', Times, serif;
+     display: block;
+ }
+ .number{
+     border: 0.25px solid black;
+     border-radius: 10px;
+     height: 40px;
+     width: 300px;
+ }
+ .number:hover{
+     background-color: rgb(225, 161, 201);
+   
+ }
+
+ #symbol3{
+             color: black;
+             animation: moonroot 10s ease 1s infinite;
+         }
+
+ @keyframes moonroot {
+         50%{
+             transform:scale(2) rotate(-30deg); 
+                               
+         }
+         70%{
+             transform:scale(2) rotate(30deg); 
+         
+         }
+         100%{
+             transform:scale(2); 
+         }
+ }
+
+ form{
+     display: inline-block;
+ }
+ .sharekey{
+     height: 40px;
+     width: 140px;
+     border-radius: 10px;
+
+ }
+ 
+ @media screen and (min-width:769px) and (max-width:2000px) {
+     #apps{
+     display: inline;
+ }
+
+ #tel{
+     display: block;
+     font-size: 80px;
+     color: rgb(173, 62, 130);
+     padding-left: 150px;
+     animation: telegram 10s ease 1s infinite;
+ }
+ @keyframes telegram {
+         50%{
+             transform:translateX(400px) rotate(-30deg); 
+         }
+        
+         100%{
+             transform: rotate(0deg) translateX(0px); 
+         }
+ }
+ #twi{
+     display: block;
+     font-size: 80px;
+     color: rgb(173, 62, 130);
+     padding-left: 400px;
+     padding-top: 10px;
+     animation: twitter 10s ease 1s infinite;
+ }
+ @keyframes twitter{
+         50%{
+             transform:translateX(-150px) rotate(60deg); 
+         }
+        
+         100%{
+             transform: translateX(0px); 
+         }
+ }
+
+ #ins{
+     display: block;
+     font-size: 80px;
+     color: rgb(173, 62, 130);
+     padding-left: 150px;
+     padding-top: 10px;
+     animation: instagram 10s ease 1s infinite;
+ }
+ @keyframes instagram {
+         50%{
+             transform:translateX(400px) rotate(-30deg); 
+         }
+        
+         100%{
+             transform: rotate(0deg) translateX(0px); 
+         }
+ }
+ #face{
+     display: block;
+     font-size: 80px;
+     color: rgb(173, 62, 130);
+     padding-left: 400px;
+     padding-top: 10px;
+     animation: facebook 10s ease 1s infinite;
+ }
+ @keyframes facebook{
+         50%{
+             transform:translateX(-150px) rotate(60deg); 
+         }
+        
+         100%{
+             transform: translateX(0px); 
+         }
+ }
+
+ #what{
+     display: block;
+     font-size: 80px;
+     color: rgb(173, 62, 130);
+     padding-left: 150px;
+     padding-top: 10px;
+     animation: whatsapp 10s ease 1s infinite;
+ }
+ @keyframes whatsapp {
+         50%{
+             transform:translateX(400px) rotate(-30deg); 
+         }
+        
+         100%{
+             transform: rotate(0deg) translateX(0px); 
+         }
+ }
+ }
+
+ @media screen and (max-width:991px){
+     #apps{
+         display: none;
+     }
+ }
+
+
+
+ @media screen and (min-width:1200px) and (max-width:1300px){
+     #tel{
+         font-size: 50px;
+         padding-top: 20px;
+       
+   }
+     #twi{
+         font-size: 50px;
+         padding-top: 20px;
+     
+     }
+     #ins{
+         font-size: 50px;
+         padding-top: 20px;
+     
+     }
+     #face{
+         font-size: 50px;
+         padding-top: 20px;
+     
+     }
+     #what{
+         font-size: 50px;
+         padding-top: 20px;
+     
+     }
+ }
+
+ @media screen and (min-width:769px) and (max-width:1200px){
+     #tel{
+         font-size: 30px;
+         padding-top: 20px;
+         animation: telegram 10s ease 1s infinite;
+       
+   }
+   @keyframes telegram {
+         50%{
+             transform:translateX(300px) rotate(-30deg); 
+         }
+        
+         100%{
+             transform: rotate(0deg) translateX(0px); 
+         }
+ }
+
+     #twi{
+         font-size: 30px;
+         padding-bottom: 20px;
+         animation: twitter 10s ease 1s infinite;
+     }
+     @keyframes twitter{
+         50%{
+             transform:translateX(-150px) rotate(30deg); 
+         }
+        
+         100%{
+             transform: translateX(0px); 
+         }
+ }
+
+     #ins{
+         font-size: 30px;
+         padding-top: 20px;
+         animation: instagram 10s ease 1s infinite;
+     }
+     @keyframes instagram {
+         50%{
+             transform:translateX(300px) rotate(-30deg); 
+         }
+        
+         100%{
+             transform: rotate(0deg) translateX(0px); 
+         }
+ }
+
+     #face{
+         font-size: 30px;
+         padding-top: 20px;
+         animation: facebook 10s ease 1s infinite;
+     }
+     @keyframes facebook{
+         50%{
+             transform:translateX(-150px) rotate(30deg); 
+         }
+        
+         100%{
+             transform: translateX(0px); 
+         }
+     }
+
+     #what{
+         font-size: 30px;
+         padding-top: 20px;
+         animation: whatsapp 10s ease 1s infinite;
+     }
+     @keyframes whatsapp {
+         50%{
+             transform:translateX(300px) rotate(-30deg); 
+         }
+        
+         100%{
+             transform: rotate(0deg) translateX(0px); 
+         }
+ }
+     
+ }
+
+
+ /* @media screen and (min-width:1217px) and (max-width:1300px){
+     #tel{
+     
+   }
+     #twi{
+     
+     }
+     #ins{
+     
+     }
+     #face{
+     
+     }
+     #what{
+     
+     }
+ } */
+
+ .bake{
+     color: black;
+     text-decoration: none;
+     font-size: 17px;
+ }
+ .bake:hover{
+     color: white;
+ }

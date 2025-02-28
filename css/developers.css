@@ -1,0 +1,136 @@
+
+          body{
+              background-color: rgb(37, 37, 37);
+
+          }
+          .title{
+              color: #FFCC00;
+
+          }
+
+          #android{
+          font-size: x-large;
+          color: #FFCC00;
+      }
+
+      .t1{
+          display: inline-block;
+          color: #FFCC00;
+      }
+
+      .file{
+          height: 50px;
+          width: 250px;
+          background-color: beige;
+          border-radius: 15px;
+
+      }
+      .file:hover{
+          /* transform: scale(0.95); */
+          box-shadow: 2px 2px 3px 3px beige;
+      }
+
+      .imagedevelop{
+      width: 500px;
+      height: 500px;
+      }
+
+      img{
+        width: 500px;
+        height: 500px;
+  }
+
+    .imo{
+      width: 500px;
+      height: 600px;
+
+    }
+    .lol{
+      width: 500px;
+      height: 570px;
+     
+     
+    }
+     @media screen and (max-width:530px) {
+      
+
+      .imagedevelop{
+      width: 320px;
+      height: 400px;
+ 
+      }
+      img{
+      height: 400px;
+      width: 320px;
+  }
+
+    .imo{
+      height: 400px;
+      width: 320px;
+
+    }
+    .lol{
+      height: 370px;
+      width: 320px;
+     
+     
+    }
+  }
+
+  video {
+max-width: 100%;
+
+}
+.vid{
+  margin-top: 150px;
+}
+   
+
+@media screen and (max-width:700px) {
+  .vov{
+    margin-top: 30px;
+  }
+}
+#vidcolor{
+  background-color: rgb(27, 26, 26);
+  border-radius: 20px;
+}
+.mov{
+  border-radius: 10px;
+}
+
+#fontvid{
+          font-family:"Arabic Typesetting", serif;
+         color: #FFCC00;
+         text-shadow: 0.75px 0.75px rgb(33, 32, 32);
+      }
+
+      #textshadow{
+          color: #FFCC00;
+          text-shadow: 0.75px 0.75px rgb(167, 164, 164);
+      }
+
+      .telme{
+        margin: auto;
+        border-radius: 15px;
+        width: 280px;
+        height: 480px;
+        
+      }
+      .telmy{
+        margin: auto;
+        border-radius:35px ;
+        opacity: 1;
+        /* background-color:rgba( 37,37, 37);
+     */
+       
+      }
+      .bgtel{
+        margin: auto;
+        width: 310px;
+        background-color:black;
+    
+      }
+      .cros{
+        background-color: #FFCC00;
+      }

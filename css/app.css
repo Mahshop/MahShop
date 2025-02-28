@@ -1,0 +1,282 @@
+body{
+    background-color: #FFCC00; 
+
+   }
+
+
+
+    #search{
+       border: 2px solid black;
+       border-radius: 8px;
+       background-color:  #FFCC00;
+       height: 30px;
+       width: 300px;
+       text-align: center;
+
+    }
+    #icsearch{
+        font-size: larger;
+    }   
+    #seroot{
+        display: inline-block;
+    
+    }
+    
+    #profile{
+        color: rgb(220, 218, 218);
+        border-radius: 100px;
+        border: none;
+        font-size: 30px;
+        display: inline-block;
+    }
+    .forsear{
+        display: inline-block;
+    }
+
+    #rootapp{
+        margin-top: 100px;
+        margin-left: 600px;
+    }
+
+    @media screen and (min-width: 320px) and (max-width: 768px) {
+             #search{
+                width: 150px;
+             }
+             .item {
+                cursor: pointer;
+                display: inline-block;
+                flex-direction: column;
+                justify-content: space-around;
+            } 
+            .meno {
+                width: 35px;
+                height: 5px;
+                background-color: #FFCC00;
+                margin: 6px 0;
+                border-radius: 10px;
+                }
+
+                .menu-items.show {
+                     display: block; 
+                    }
+
+                    .menu-items a{
+                        color: #FFCC00;
+                        text-decoration: none;
+                        }
+                    .menu-items a:hover{
+                                color: beige;
+                        }
+
+                
+                    .menu-items {
+                    display: none; 
+                    }
+
+            #roottab{
+                display: none;
+            }
+
+            #symbol2{
+                color: black;
+                animation: moonroot 10s ease 1s infinite;
+            }
+
+    @keyframes moonroot {
+            50%{
+                transform:scale(2) rotate(-30deg); 
+                                  
+            }
+            70%{
+                transform:scale(2) rotate(30deg); 
+            
+            }
+            100%{
+                transform:scale(2); 
+            }
+    }
+    
+          }
+
+          @media screen and (min-width: 768px) and (max-width: 2000px) {
+            
+            .tab{
+                 color: #FFCC00;
+                 text-decoration: none;
+        
+                }
+
+            .tab:hover{
+                color: beige;
+            }
+
+
+            .menu-items {
+                     display: none; 
+                    }
+
+                #roottab{
+
+                    display: inline-block;
+                }
+
+                .item{
+                    display: none;
+                }
+            #symbol{
+                color: #FFCC00;
+                animation: moon 10s ease 1s infinite;
+            }
+
+            @keyframes moon {
+            50%{
+                transform:scale(1.5) rotate(-30deg); 
+                                  
+            }
+            70%{
+                transform:scale(1.5) rotate(30deg); 
+            
+            }
+            100%{
+                transform:scale(1); 
+            }
+    }
+            
+      #symbol2{
+                display: none;
+            }
+
+          }
+  
+
+   .parent {
+      max-width: 100%;
+      height: auto;
+      overflow: auto;
+      white-space: nowrap;
+      
+   }
+
+  .parent img {
+        margin-top: 50px;
+        margin-right: 20px
+      }
+   ::-webkit-scrollbar {
+     width: 1vw;
+     height: 0.5vh;
+   }
+   ::-webkit-scrollbar-track{
+    background-color:white;
+    border-radius: 10em;
+    margin-left: 10px;
+    margin-right: 10px;
+   }
+   ::-webkit-scrollbar-thumb {
+    background-color: black;
+    border-radius: 10em;
+   }
+   html{
+    scrollbar-color: none;
+   }
+   .app{
+   text-align: center;
+   
+   }
+   .app:hover{
+    border: 1px solid beige;
+    text-shadow: 1px 1px rgb(254, 254, 254);
+   }
+   img{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+   }
+   #container{
+    background-color: white;
+    border: 1px solid black;
+   border-bottom-right-radius: 15px;
+   border-bottom-left-radius: 15px;
+   
+   }
+   .titel{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    padding-left: 6px;
+   }
+   #header{
+    background-color:  rgb(85,83,83);
+    border: 1px solid black;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+   }
+   .addtext{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color:black;
+    text-decoration: none;
+    font-size: 25px;
+   }
+   .addtext:hover{
+    color: white;
+   }
+
+   .banktext{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color:black;
+    font-size: 25px;
+      }
+
+
+   .adder{
+    display: inline-block;
+   }
+   .bank{
+    display: inline-block;
+   }
+
+
+   @media screen and (min-width:320px) and (max-width:426px) {
+
+    .addtext{
+    font-size: 15px;
+   }
+
+        .banktext{
+         font-size: 15px;
+      }
+
+   
+
+   }
+
+
+    .bake{
+        text-decoration: none;
+        font-size: 17px;
+    }
+    .bake:hover{
+        color: white;
+    }
+
+    #symbol3{
+                color: black;
+                animation: mooniroot 10s ease 1s infinite;
+            }
+
+    @keyframes mooniroot {
+            50%{
+                transform:scale(1.5) rotate(-30deg); 
+                                  
+            }
+            70%{
+                transform:scale(1.5) rotate(30deg); 
+            
+            }
+            100%{
+                transform:scale(1.5); 
+            }
+    }
+    
+    .fontclient{
+        font-family:"Arabic Typesetting", serif;
+        font-size: 27px;
+    }
