@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apps</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css" integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/app.css" type="text/css">
+
+
+</head>
+<body>
+
+    
+
+    <div class="container-fluid bg-dark">
+        <div class="row">
+          
+          <div class=" mb-2 col-lg-1 col-md-1 col-sm-2 col-2">
+              <a href="login.html"><i class="fa fa-user-circle-o btn btn-outline-warning" id="profile"></i></a>
+          </div>
+
+          <div  class="col-lg-6 col-md-5 col-sm-8 mt-2 col-7 "  id="seroot">
+              <input type="text" placeholder="جستجو در ماه شاپ" id="search">
+              <!-- <i class="fa fa-search" id="icsearch"></i> -->
+          </div>
+
+          <div class="item col-sm-2 col-3 col-md-6 d-lg-none" onclick="toggleMenu()">
+              <div class="meno"></div>
+              <div class="meno"></div>
+              <div class="meno"></div>
+          </div>
+
+          <div class="menu-items" id="menuItems">
+          <nav class="mainNav">
+              <ul class="list-unstyled d-flex justify-content-center">
+                  <li class="b1"><a href="app.html" class="tab ps-4 pt-0 btn disabled" >برنامه</a></li>
+                  <li class="b1"><a href="game.html" class="tab ps-4">بازی</a></li>
+                  <li class="b1"><a href="developers.html" class="tab ps-4">سازندگان ماه شاپ</a></li>
+                  <li class="b1"><a href="#" class="tab ps-4" type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal">پشتیبانی</a></li>
+                  <div class="modal fade text-start" tabindex="-1" id="exampleModal" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="btn-close me-2 mt-1" data-bs-dismiss="modal" aria-label="Close"></button>
+                          <h5 class="fontclient modal-title mt-1 ms-3" id="exampleModalLabel">درود ماه شاپی عزیز</h5>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-moon-stars-fill mt-1" viewBox="0 0 16 16"  id="symbol3">
+                            <path d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278"/>
+                            <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.73 1.73 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.73 1.73 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.73 1.73 0 0 0 1.097-1.097zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z"/>
+                          </svg>
+                        </div>
+                        <div class="modal-body">
+                         پس از خریداری سایت بخش پشتیبانی فعال خواهد شد
+                        </div>
+                    </div>
+                </div>
+              </div>   
+              </ul>
+              
+          </nav>
+      </div>
+
+      <script src="menu.js"></script>
+
+
+
+
+
+
+
+          <div class="col-lg-5 col-md-6 mt-2 " id="roottab">
+              <a href="app.html" class="tab ps-4 pt-0 btn disabled">برنامه</a>  
+              <a href="game.html" class="tab ps-4">بازی</a>    
+              <a href="#" class="tab ps-4 pt-0 btn disabled">پشتیبانی</a>    
+              <a href="developers.html" class="tab ps-4">سازندگان ماه شاپ</a>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-moon-stars-fill" viewBox="0 0 16 16" id="symbol">
+                  <path d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278"/>
+                  <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.73 1.73 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.73 1.73 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.73 1.73 0 0 0 1.097-1.097zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z"/>
+              </svg>
+             
+          </div>
+         </div>
+         
+    </div>
+
+
+
+         <div class="container-fluid mt-4 mb-4 text-start ">
+                <div class="row">
+                   <div class="ps-5 col-12 col-sm-10 col-md-11 col-lg-11">
+                      <a href="index.html" class="bake"> بازگشت به صفحه قبل <i class="bake fa fa-arrow-circle-right"></i></a>
+                     
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+   
+       <div class="container mt-5" id="header">
+            <div class="row">
+                <div class="adder col-lg-8 col-md-6 col-sm-2 col-5 mt-2">
+                    <a href="#" class="addtext pb-1 pe-3">..بیشتر</a>
+                </div>
+
+                <div class="bank col-lg-4 col-md-6 col-sm-10 col-7">
+                    <p class="banktext h5 pt-2">برنامه‌های رسمی بانک‌های کشور</p>
+                </div>
+            </div>
+         </div>
+         <div class="container" id="container">
+
+                <div class="row parent" >
+                    <div class="col-12 d-flex ">
+
+                        <div class="app pe-1 ps-4">
+                            <img src="app img/img1.webp" alt="" class="pe-1">
+                            <p class="titel h5 ps-3 pt-2">ویپاد - بانک</p>
+                        </div>
+                        <div class="app pe-1 ps-4 ">
+                            <img src="app img/img2.webp" alt="">
+                            <p class="titel h5 ps-4 pt-2">..بلو بانک</p>
+                        </div>
+                        <div class="app pe-1 ps-4">
+                            <img src="app img/img3.webp" alt="">
+                            <p class="titel h5 ps-3 pt-2">همراه بانک ملت</p>
+                        </div>
+                        <div class="app pe-1 ps-4">
+                            <img src="app img/img4.webp" alt="">
+                            <p class="titel h5 ps-3 pt-2">همراه بانک سپه</p>
+                        </div>
+                        <div class="app pe-1 ps-4">
+                            <img src="app img/img5.webp" alt="">
+                            <p class="titel h5 ps-4 pt-2">فوربیکس</p>
+                        </div>
+                        <div class="app pe-1 ps-4">
+                            <img src="app img/img6.webp" alt="">
+                            <p class="titel h5 ps-4 pt-2">کیلید</p>
+                        </div>
+                        <div class="app pe-1 ps-4">
+                            <img src="app img/img7.webp" alt="">
+                            <p class="titel h5 ps-3 pt-2">بانکت - وام</p>
+                        </div>
+                        <div class="app pe-1 ps-4">
+                            <img src="app img/img8.webp" alt="">
+                            <p class="titel h5 ps-4 pt-2">..باجت</p>
+                        </div>
+                        <div class="app pe-1 ps-4">
+                            <img src="app img/img9.webp" alt="">
+                            <p class="titel h5 ps-4 pt-2">..بام</p>
+                        </div>
+                        <div class="app pe-1 ps-4">
+                            <img src="app img/img10.webp" alt="">
+                            <p class="titel h5 ps-4 pt-2">فرا رفاه</p>
+                        </div>
+                        <div class="app pe-1 ps-4">
+                            <img src="app img/img11.webp" alt="">
+                            <p class="titel h5 ps-4 pt-2">متابانک</p>
+                        </div>
+                        <div class="app pe-1 ps-4">
+                            <img src="app img/img12.webp" alt="">
+                            <p class="titel h5 ps-4 pt-2">بلو جونیور</p>
+                        </div>
+                        <div class="app pe-1 ps-4">
+                            <img src="app img/img13.webp" alt="">
+                            <p class="titel h5 ps-4 pt-2">بانکیار</p>
+                        </div>
+                        <div class="app pe-1 ps-4">
+                            <img src="app img/img14.webp" alt="">
+                            <p class="titel h5 ps-3 pt-2">..باران بانک</p>
+                        </div>
+                        <div class="app pe-1 ps-4">
+                            <img src="app img/img15.webp" alt="">
+                            <p class="titel h5 ps-3 pt-2">..همراه بانک صاد</p>
+                        </div>
+
+                    </div>
+                </div>    
+        </div>
+
+
+
+
+
+        <div class="container mt-5" id="header">
+            <div class="row">
+                <div class="adder col-lg-8 col-md-6 col-sm-2 col-5 mt-2">
+                    <a href="#" class="addtext pb-1 pe-3">..بیشتر</a>
+                </div>
+
+                <div class="bank col-lg-4 col-md-6 col-sm-10 col-7">
+                    <p class="banktext h5 pt-2">روی خط شبکه‌های اجتماعی</p>
+                </div>
+            </div>
+         </div>
+         <div class="container" id="container">
+
+                <div class="row parent" >
+                    <div class="col-12 d-flex ">
+
+                        <div class="app pe-1 ps-4">
+                            <img src="app2img/img1.webp" alt="" class="pe-1">
+                            <p class="titel h5 ps-3 pt-2">واتساپ</p>
+                        </div>
+                        <div class="app pe-1 ps-4 ">
+                            <img src="app2img/img2.png" alt="">
+                            <p class="titel h5 ps-4 pt-2">تلگرام</p>
+                        </div>
+                        <div class="app pe-1 ps-4">
+                            <img src="app2img/img3.png" alt="">
+                            <p class="titel h5 ps-3 pt-2">توییتر</p>
+                        </div>
+                        <div class="app pe-1 ps-4">
+                            <img src="app2img/img4.png" alt="">
+                            <p class="titel h5 ps-3 pt-2">فیسبوک</p>
+                        </div>
+                        <div class="app pe-1 ps-4">
+                            <img src="app2img/img5.png" alt="">
+                            <p class="titel h5 ps-4 pt-2">اینستاگرام</p>
+                        </div>
+                        <div class="app pe-1 ps-4">
+                            <img src="app2img/img6.webp" alt="">
+                            <p class="titel h5 ps-4 pt-2">لینکدین</p>
+                        </div>
+                        <div class="app pe-1 ps-4">
+                            <img src="app2img/img7.webp" alt="">
+                            <p class="titel h5 ps-3 pt-2">اسکایپ</p>
+                        </div>
+                        <div class="app pe-1 ps-4">
+                            <img src="app2img/img8.webp" alt="">
+                            <p class="titel h5 ps-4 pt-2">اوزون</p>
+                        </div>
+                        <div class="app pe-1 ps-4">
+                            <img src="app2img/img9.webp" alt="">
+                            <p class="titel h5 ps-4 pt-2">ایمو</p>
+                        </div>
+                        <div class="app pe-1 ps-4">
+                            <img src="app2img/img10.webp" alt="">
+                            <p class="titel h5 ps-4 pt-2">سروش</p>
+                        </div>
+                        <div class="app pe-1 ps-4">
+                            <img src="app2img/img11.webp" alt="">
+                            <p class="titel h5 ps-4 pt-2">پلاتو</p>
+                        </div>
+                        <div class="app pe-1 ps-4">
+                            <img src="app2img/img12.webp" alt="">
+                            <p class="titel h5 ps-4 pt-2">بی ریل</p>
+                        </div>
+                        <div class="app pe-1 ps-4">
+                            <img src="app2img/img13.webp" alt="">
+
+                            <p class="titel h5 ps-4 pt-2">باهم</p>
+                        </div>
+                        <div class="app pe-1 ps-4">
+                            <img src="app2img/img14.webp" alt="">
+                            <p class="titel h5 ps-4 pt-2">بله</p>
+                          
+                        </div>
+                        <div class="app pe-1 ps-4">
+                            <img src="app2img/img15.webp" alt="">
+                            <p class="titel h5 ps-4 pt-2">پیام رسان ایتا</p>
+                        </div>
+
+                    </div>
+                </div>    
+        </div>
+
+
+
+
+
+
+        <div class="container mt-5" id="header">
+            <div class="row">
+                <div class="adder col-lg-8 col-md-6 col-sm-2 col-5 mt-2">
+                    <a href="#" class="addtext pb-1 pe-3">..بیشتر</a>
+                </div>
+
+                <div class="bank col-lg-4 col-md-6 col-sm-10 col-7">
+                    <p class="banktext h5 pt-2">نوازنده ساز خودت باش</p>
+                </div>
+            </div>
+         </div>
+         <div class="container mb-5" id="container">
+
+                <div class="row parent" >
+                    <div class="col-12 d-flex ">
+
+                        <div class="app pe-1 ps-4">
+                            <img src="app3img/img1.webp" alt="" class="pe-1">
+                            <p class="titel h5 ps-3 pt-2">ارگ 24</p>
+                        </div>
+                        <div class="app pe-1 ps-4 ">
+                            <img src="app3img/img2.webp" alt="">
+                            <p class="titel h5 ps-4 pt-2">ارگ حرفه ای</p>
+                        </div>
+                        <div class="app pe-1 ps-4">
+                            <img src="app img/img3.webp" alt="">
+                            <p class="titel h5 ps-3 pt-2">پیانو واقعی</p>
+                        </div>
+                        <div class="app pe-1 ps-4">
+                            <img src="app3img/img4.webp" alt="">
+                            <p class="titel h5 ps-3 pt-2">ارگ ایرانی</p>
+                        </div>
+                        <div class="app pe-1 ps-4">
+                            <img src="app3img/img5.webp" alt="">
+                            <p class="titel h5 ps-4 pt-2">هنگ درام</p>
+                        </div>
+                        <div class="app pe-1 ps-4">
+                            <img src="app3img/img6.webp" alt="">
+                            <p class="titel h5 ps-4 pt-2">پیانو کامل</p>
+                        </div>
+                        <div class="app pe-1 ps-4">
+                            <img src="app3img/img7.webp" alt="">
+                            <p class="titel h5 ps-3 pt-2">کی لیمبا</p>
+                        </div>
+                        <div class="app pe-1 ps-4">
+                            <img src="app3img/img8.webp" alt="">
+                            <p class="titel h5 ps-4 pt-2">ایکس درام</p>
+                        </div>
+                        <div class="app pe-1 ps-4">
+                            <img src="app3img/img9.webp" alt="">
+                            <p class="titel h5 ps-4 pt-2">داربوکا واقعی</p>
+                        </div>
+                        <div class="app pe-1 ps-4">
+                            <img src="app3img/img10.webp" alt="">
+                            <p class="titel h5 ps-4 pt-2">پیانو</p>
+                        </div>
+                        <div class="app pe-1 ps-4">
+                            <img src="app3img/img11.webp" alt="">
+                            <p class="titel h5 ps-4 pt-2">ارگ 2025</p>
+                        </div>
+                        <div class="app pe-1 ps-4">
+                            <img src="app3img/img12.webp" alt="">
+                            <p class="titel h5 ps-4 pt-2">موزیک واقعی</p>
+                        </div>
+                        <div class="app pe-1 ps-4">
+                            <img src="app3img/img13.webp" alt="">
+                            <p class="titel h5 ps-4 pt-2">اینسترومنتال</p>
+                        </div>
+                        <div class="app pe-1 ps-4">
+                            <img src="app3img/img14.webp" alt="">
+                            <p class="titel h5 ps-3 pt-2">گیتار واقعی</p>
+                        </div>
+                        <div class="app pe-1 ps-4">
+                            <img src="app3img/img15.webp" alt="">
+                            <p class="titel h5 ps-3 pt-2">سنتور اموزشی</p>
+                        </div>
+
+                    </div>
+                </div>    
+        </div>
+</body>
+</html>

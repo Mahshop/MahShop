@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>games</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css" integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="css/game.css">
+</head>
+<body>
+    
+    <div class="container-fluid bg-dark">
+        <div class="row">
+          
+          <div class=" mb-2 col-lg-1 col-md-1 col-sm-2 col-2">
+              <a href="login.html"><i class="fa fa-user-circle-o btn btn-outline-warning" id="profile"></i></a>
+          </div>
+
+          <div  class="col-lg-6 col-md-5 col-sm-8 mt-2 col-7 "  id="seroot">
+              <input type="text" placeholder="جستجو در ماه شاپ" id="search">
+              <!-- <i class="fa fa-search" id="icsearch"></i> -->
+          </div>
+
+          <div class="item col-sm-2 col-3 col-md-6 d-lg-none" onclick="toggleMenu()">
+              <div class="meno"></div>
+              <div class="meno"></div>
+              <div class="meno"></div>
+          </div>
+
+          <div class="menu-items" id="menuItems">
+            <nav class="mainNav">
+                <ul class="list-unstyled d-flex justify-content-center">
+                    <li class="b1"><a href="app.html" class="tab ps-4" >برنامه</a></li>
+                    <li class="b1"><a href="game.html" class="tab ps-4 pt-0 btn disabled">بازی</a></li>
+                    <li class="b1"><a href="#" class="tab ps-4" type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal">پشتیبانی</a></li>
+                    <div class="modal fade text-start" tabindex="-1" id="exampleModal" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <button type="button" class="btn-close me-2 mt-1" data-bs-dismiss="modal" aria-label="Close"></button>
+                              <h5 class="fontclient modal-title mt-1 ms-3" id="exampleModalLabel">درود ماه شاپی عزیز</h5>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-moon-stars-fill mt-1" viewBox="0 0 16 16"  id="symbol3">
+                                <path d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278"/>
+                                <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.73 1.73 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.73 1.73 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.73 1.73 0 0 0 1.097-1.097zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z"/>
+                              </svg>
+                            </div>
+                            <div class="modal-body">
+                             پس از خریداری سایت بخش پشتیبانی فعال خواهد شد
+                            </div>
+                        </div>
+                    </div>
+                  </div>  
+                    <li class="b1"><a href="developers.html" class="tab ps-4">سازندگان ماه شاپ</a></li>
+                </ul>
+                
+            </nav>
+        </div>
+  
+        <script src="menu.js"></script>
+
+
+
+
+
+
+          <div class="col-lg-5 col-md-6 mt-2 " id="roottab">
+              <a href="app.html" class="tab ps-4">برنامه</a>  
+              <a href="game.html" class="tab ps-4 pt-0 btn disabled">بازی</a>    
+              <a href="#" class="tab ps-4 pt-0 btn disabled">پشتیبانی</a>   
+              <a href="developers.html" class="tab ps-4">سازندگان ماه شاپ</a>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-moon-stars-fill" viewBox="0 0 16 16" id="symbol">
+                  <path d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278"/>
+                  <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.73 1.73 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.73 1.73 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.73 1.73 0 0 0 1.097-1.097zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z"/>
+              </svg>
+             
+          </div>
+         </div>
+         
+    </div>
+
+
+
+         <div class="container-fluid mt-4 mb-4 text-start ">
+                <div class="row">
+                   <div class="ps-5 col-12 col-sm-10 col-md-11 col-lg-11">
+                      <a href="index.html" class="bake"> بازگشت به صفحه قبل <i class="bake fa fa-arrow-circle-right"></i></a>
+                     
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+   
+       <div class="container mt-5" id="header">
+            <div class="row">
+                <div class="adder col-lg-8 col-md-6 col-sm-2 col-5 mt-2">
+                    <a href="#" class="addtext pb-1 pe-3">..بیشتر</a>
+                </div>
+
+                <div class="bank col-lg-4 col-md-6 col-sm-10 col-7">
+                    <p class="banktext h5 pt-2">بازی‌های دیتادار</p>
+                </div>
+            </div>
+         </div>
+         <div class="container" id="container">
+
+                <div class="row parent" >
+                    <div class="col-12 d-flex ">
+
+                        <div class="app pe-1 ps-4">
+                            <img src="game1img/img1.webp" alt="" class="pe-1">
+                            <p class="titel h5 ps-3 pt-2">بتل تانک</p>
+                        </div>
+                        <div class="app pe-1 ps-4 ">
+                            <img src="game1img/img2.webp" alt="">
+                            <p class="titel h5 ps-4 pt-2">جزیره زامبی</p>
+                        </div>
+                        <div class="app pe-1 ps-4">
+                            <img src="game1img/img3.webp" alt="">
+                            <p class="titel h5 ps-3 pt-2">اسپشیال فورس</p>
+                        </div>
+                        <div class="app pe-1 ps-4">
+                            <img src="game1img/img4.webp" alt="">
+                            <p class="titel h5 ps-3 pt-2">اسب سواری</p>
+                        </div>
+                        <div class="app pe-1 ps-4">
+                            <img src="game1img/img5.webp" alt="">
+                            <p class="titel h5 ps-4 pt-2">دد بول</p>
+                        </div>
+                        <div class="app pe-1 ps-4">
+                            <img src="game1img/img6.webp" alt="">
+                            <p class="titel h5 ps-4 pt-2">خدای جنگ 4</p>
+                        </div>
+                        <div class="app pe-1 ps-4">
+                            <img src="game1img/img7.webp" alt="">
+                            <p class="titel h5 ps-3 pt-2">کوکینگ دیرینگ</p>
+                        </div>
+                        <div class="app pe-1 ps-4">
+                            <img src="game1img/img8.webp" alt="">
+                            <p class="titel h5 ps-4 pt-2">کار ایکس</p>
+                        </div>
+                        <div class="app pe-1 ps-4">
+                            <img src="game1img/img9.webp" alt="">
+                            <p class="titel h5 ps-4 pt-2">رویال لجند</p>
+                        </div>
+                        <div class="app pe-1 ps-4">
+                            <img src="game1img/img10.webp" alt="">
+                            <p class="titel h5 ps-4 pt-2">جی تی رکینگ</p>
+                        </div>
+                        <div class="app pe-1 ps-4">
+                            <img src="game1img/img11.webp" alt="">
+                            <p class="titel h5 ps-4 pt-2">شاتگان</p>
+                        </div>
+                        <div class="app pe-1 ps-4">
+                            <img src="game1img/img12.webp" alt="">
+                            <p class="titel h5 ps-4 pt-2">ورلد اف وار</p>
+                        </div>
+                        <div class="app pe-1 ps-4">
+                            <img src="game1img/img13.webp" alt="">
+                            <p class="titel h5 ps-4 pt-2">پاسور</p>
+                        </div>
+                        <div class="app pe-1 ps-4">
+                            <img src="game1img/img14.webp" alt="">
+                            <p class="titel h5 ps-3 pt-2">جود را پیدا کن</p>
+                        </div>
+                        <div class="app pe-1 ps-4">
+                            <img src="game1img/img15.webp" alt="">
+                            <p class="titel h5 ps-3 pt-2">پل اجری</p>
+                        </div>
+
+                    </div>
+                </div>    
+        </div>
+
+
+
+
+        <div class="container mt-5" id="header">
+            <div class="row">
+                <div class="adder col-lg-8 col-md-6 col-sm-2 col-5 mt-2">
+                    <a href="#" class="addtext pb-1 pe-3">..بیشتر</a>
+                </div>
+
+                <div class="bank col-lg-4 col-md-6 col-sm-10 col-7">
+                    <p class="banktext h5 pt-2">بازی های ورزشی</p>
+                </div>
+            </div>
+         </div>
+         <div class="container" id="container">
+
+                <div class="row parent" >
+                    <div class="col-12 d-flex ">
+
+                        <div class="app pe-1 ps-4">
+                            <img src="game2img/img1.webp" alt="" class="pe-1">
+                            <p class="titel h5 ps-3 pt-2">تیراندازی حرفه ای</p>
+                        </div>
+                        <div class="app pe-1 ps-4 ">
+                            <img src="game2img/img2.webp" alt="">
+                            <p class="titel h5 ps-4 pt-2">بسکتبال کالج</p>
+                        </div>
+                        <div class="app pe-1 ps-4">
+                            <img src="game2img/img3.webp" alt="">
+                            <p class="titel h5 ps-3 pt-2">کلاب مربیان</p>
+                        </div>
+                        <div class="app pe-1 ps-4">
+                            <img src="game2img/img4.webp" alt="">
+                            <p class="titel h5 ps-3 pt-2">t20 واقعی</p>
+                        </div>
+                        <div class="app pe-1 ps-4">
+                            <img src="game2img/img5.webp" alt="">
+                            <p class="titel h5 ps-4 pt-2">فوتبال امریکایی</p>
+                        </div>
+                        <div class="app pe-1 ps-4">
+                            <img src="game2img/img6.webp" alt="">
+                            <p class="titel h5 ps-4 pt-2">پاور پلی</p>
+                        </div>
+                        <div class="app pe-1 ps-4">
+                            <img src="game2img/img7.webp" alt="">
+                            <p class="titel h5 ps-4 pt-2">بولینگ گیم</p>
+
+                        </div>
+                        <div class="app pe-1 ps-4">
+                            <img src="game2img/img8.webp" alt="">
+                            <p class="titel h5 ps-3 pt-2">هانتینگ</p>
+     
+                        </div>
+                        <div class="app pe-1 ps-4">
+                            <img src="game2img/img9.webp" alt="">
+                            <p class="titel h5 ps-4 pt-2">لایت امریکایی</p>
+     
+                        </div>
+                        <div class="app pe-1 ps-4">
+                            <img src="game2img/img10.webp" alt="">
+                            <p class="titel h5 ps-4 pt-2">مستر بال</p>
+      
+                        </div>
+                        <div class="app pe-1 ps-4">
+                            <img src="game2img/img11.webp" alt="">
+                            <p class="titel h5 ps-4 pt-2">اسماش</p>
+ 
+                        </div>
+                        <div class="app pe-1 ps-4">
+                            <img src="game2img/img12.webp" alt="">
+                            <p class="titel h5 ps-4 pt-2">والی ران</p>
+                
+
+                        </div>
+                        <div class="app pe-1 ps-4">
+                            <img src="game2img/img13.webp" alt="">
+                            <p class="titel h5 ps-4 pt-2">فری استایل</p>
+                         
+                        </div>
+                        <div class="app pe-1 ps-4">
+                            <img src="game2img/img14.webp" alt="">
+                            <p class="titel h5 ps-3 pt-2">جود را پیدا کن</p>
+                        </div>
+                        <div class="app pe-1 ps-4">
+                            <img src="game2img/img15.webp" alt="">
+                            <p class="titel h5 ps-3 pt-2">پل اجری</p>
+                        </div>
+
+                    </div>
+                </div>    
+        </div>
+
+
+
+
+        <div class="container mt-5" id="header">
+            <div class="row">
+                <div class="adder col-lg-8 col-md-6 col-sm-2 col-5 mt-2">
+                    <a href="#" class="addtext pb-1 pe-3">..بیشتر</a>
+                </div>
+
+                <div class="bank col-lg-4 col-md-6 col-sm-10 col-7">
+                    <p class="banktext h5 pt-2">بازی‌های دیتادار</p>
+                </div>
+            </div>
+         </div>
+         <div class="container mb-5" id="container">
+
+                <div class="row parent" >
+                    <div class="col-12 d-flex ">
+
+                        <div class="app pe-1 ps-4">
+                            <img src="game3img/img1.webp" alt="" class="pe-1">
+                            <p class="titel h5 ps-3 pt-2">تالکینگ تام</p>
+                        </div>
+                        <div class="app pe-1 ps-4 ">
+                            <img src="game3img/img2.webp" alt="">
+                            <p class="titel h5 ps-4 pt-2">ای فوتبال</p>
+                        </div>
+                        <div class="app pe-1 ps-4">
+                            <img src="game3img/img3.webp" alt="">
+                            <p class="titel h5 ps-3 pt-2">نینجا ارشی</p>
+                        </div>
+                        <div class="app pe-1 ps-4">
+                            <img src="game3img/img4.webp" alt="">
+                            <p class="titel h5 ps-3 pt-2">استیونت بکر</p>
+                        </div>
+                        <div class="app pe-1 ps-4">
+                            <img src="game3img/img5.webp" alt="">
+                            <p class="titel h5 ps-3 pt-2">استیونت بکر</p>
+                          
+                        </div>
+                        <div class="app pe-1 ps-4">
+                            <img src="game3img/img6.webp" alt="">
+                            <p class="titel h5 ps-4 pt-2">مربی برتر</p>
+                          
+                        </div>
+                        <div class="app pe-1 ps-4">
+                            <img src="game3img/img7.webp" alt="">
+                            <p class="titel h5 ps-4 pt-2">منچ بازی</p>
+                      
+                        </div>
+                        <div class="app pe-1 ps-4">
+                            <img src="game3img/img8.webp" alt="">
+                            <p class="titel h5 ps-3 pt-2">خشم پادشاه</p>
+                         
+                        </div>
+                        <div class="app pe-1 ps-4">
+                            <img src="game3img/img9.webp" alt="">
+                            <p class="titel h5 ps-4 pt-2">سران کودتا</p>
+                          
+                        </div>
+                        <div class="app pe-1 ps-4">
+                            <img src="game3img/img10.webp" alt="">
+                            <p class="titel h5 ps-4 pt-2">بمب استیکت</p>
+                          
+                        </div>
+                        <div class="app pe-1 ps-4">
+                            <img src="game3img/img11.webp" alt="">
+                            <p class="titel h5 ps-4 pt-2">کویز اف کینگز</p>
+                        
+                        </div>
+                        <div class="app pe-1 ps-4">
+                            <img src="game3img/img12.webp" alt="">
+                            <p class="titel h5 ps-4 pt-2">رانندگی</p>
+                        
+                        </div>
+                        <div class="app pe-1 ps-4">
+                            <img src="game3img/img13.webp" alt="">
+                            <p class="titel h5 ps-4 pt-2">نبرد امپراطوری</p>
+                           
+                        </div>
+                        <div class="app pe-1 ps-4">
+                            <img src="game3img/img14.webp" alt="">
+                            <p class="titel h5 ps-4 pt-2">وارمستر</p>
+                            
+                        </div>
+                        <div class="app pe-1 ps-4">
+                            <img src="game3img/img15.webp" alt="">
+                            <p class="titel h5 ps-3 pt-2">نبر مورچه ها</p>
+                      
+                        </div>
+
+                    </div>
+                </div>    
+        </div>
+
+</body>
+</html>
